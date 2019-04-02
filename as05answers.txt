@@ -1,0 +1,29 @@
+phys3071 as05 melsom 42593249
+
+Q1
+Is there a maximum mass in each sequence? Speculate as to what you think might
+be causing this.
+
+From the initial epsilon vaules of 4.2*B to 20*B, there doesn't appear to be a 
+limit to the mass for the non-relativistic solution and there does appear to be
+a limit to the relativistic solution. This would occur because in GR, the 
+inward pull of gravity would be greater because of the higher energy density.
+The non-relativistic version accounts only for mass, and not energy as well.
+
+During developing my code, I had the wrong step size (4.4B instead of 0.2B).
+This meant that my steps went up to around 350*B. In this plot, both of 
+the plots had a turning point. After I corrected my code, I also reproduced 
+this by taking the correct step size, but continuing up to 350B. The solution 
+for this now had a smooth turning point. I would guess that this was because 
+the values of initial epsilon started were outside of the valid model.
+
+
+Q2
+What does the relationship between M and R appear to be for small 
+epsilon_nought? Discuss.
+
+For assessing this question, I set the xrange on the plot and replotted so that
+the information for small epsilon was more easily seen. I also started solving 
+analytically and the slope of M as a function of R should decrease as R goes to 
+zero, but dm/dr is a function of r and epsilon, so the equation will not be 
+exactly quadratic. 
